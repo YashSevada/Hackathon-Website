@@ -1,0 +1,156 @@
+body {
+  background-image: url("https://i.pinimg.com/originals/b8/ae/c3/b8aec33363d383b37154d35a7ce33070.gif");
+  font-family: "Arial", Times, sans-serif;
+  height: 100%;
+  width: 100vw;
+}
+
+
+
+h1 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: content-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+hr{
+  height: 1px;
+  background-color: #FFEEEE;
+}
+
+
+.card-body{
+  border-radius: 5px;
+  background-color: #d3cbb8;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.Team-table{
+  border-radius: 5px;
+  background-color: #d3cbb8;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+select{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 48px;
+}
+
+.label{
+  text-align: center;
+  font-size: 8em;
+}
+
+
+.button {
+  border-radius: 2px;
+  text-align: center;
+  margin-left:  2px;
+  background-color: #d3cbb8;
+  border: none;
+  color: black;
+  font-size: normal;
+  padding: 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.Submit {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+  padding: 12px 28px;
+}
+
+.Submit:hover {
+  background-color: #555555;
+  color: white;
+  border: 2px solid #555555;
+}
+
